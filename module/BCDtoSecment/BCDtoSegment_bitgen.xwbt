@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\DigitalSystem\module\BCDtoSecment\BCDtoSegment.ncd
+OUTFILE=D:\DigitalSystem\module\BCDtoSecment\BCDtoSegment.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\DigitalSystem\module\BCDtoSecment
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym sevenSegja C:/.Xilinx/Test/counter0_9/sevenSegja.sch C:/.Xilinx/Test/counter0_9/sevenSegja.sym 

@@ -1,0 +1,73 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab4.vf
+// /___/   /\     Timestamp : 09/13/2022 09:29:00
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Lab4/Lab4.vf -w D:/Lab4/Lab4.sch
+//Design Name: Lab4
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Lab4(B_P57, 
+            D_P58, 
+            E_P59, 
+            H_P55, 
+            S_P56, 
+            LED_P82);
+
+    input B_P57;
+    input D_P58;
+    input E_P59;
+    input H_P55;
+    input S_P56;
+   output LED_P82;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_7;
+   wire XLXN_9;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_18;
+   
+   AND2  XLXI_1 (.I0(E_P59), 
+                .I1(XLXN_2), 
+                .O(XLXN_15));
+   AND2  XLXI_2 (.I0(XLXN_3), 
+                .I1(H_P55), 
+                .O(XLXN_16));
+   AND3  XLXI_3 (.I0(E_P59), 
+                .I1(XLXN_7), 
+                .I2(S_P56), 
+                .O(XLXN_17));
+   AND3  XLXI_4 (.I0(B_P57), 
+                .I1(D_P58), 
+                .I2(XLXN_9), 
+                .O(XLXN_18));
+   OR4  XLXI_5 (.I0(XLXN_18), 
+               .I1(XLXN_17), 
+               .I2(XLXN_16), 
+               .I3(XLXN_15), 
+               .O(LED_P82));
+   INV  XLXI_6 (.I(B_P57), 
+               .O(XLXN_2));
+   INV  XLXI_7 (.I(E_P59), 
+               .O(XLXN_3));
+   INV  XLXI_8 (.I(D_P58), 
+               .O(XLXN_7));
+   INV  XLXI_9 (.I(S_P56), 
+               .O(XLXN_9));
+endmodule

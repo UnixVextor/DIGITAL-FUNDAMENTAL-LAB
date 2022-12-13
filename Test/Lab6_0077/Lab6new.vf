@@ -1,0 +1,355 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab6new.vf
+// /___/   /\     Timestamp : 11/26/2022 00:47:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/XickZenF5/Desktop/DigitalLab081065/DigitalLab/Lab6_0077/Lab6new.vf -w C:/Users/XickZenF5/Desktop/DigitalLab081065/DigitalLab/Lab6_0077/Lab6new.sch
+//Design Name: Lab6new
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CD4CE_HXILINX_Lab6new(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   parameter TERMINAL_COUNT = 4'b1001;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+
+	else if (CE)
+          begin
+             if ({Q3,Q2,Q1,Q0} == 4'b1001)
+               {Q3,Q2,Q1,Q0} <= 4'b0000;
+             else if({Q3,Q2,Q1,Q0} == 4'b1011)
+               {Q3,Q2,Q1,Q0} <= 4'b0110;
+             else if({Q3,Q2,Q1,Q0} == 4'b1101)
+               {Q3,Q2,Q1,Q0} <= 4'b0100;
+             else if({Q3,Q2,Q1,Q0} == 4'b1111)
+               {Q3,Q2,Q1,Q0} <= 4'b0010;
+            
+             else
+	      {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+          end
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module D2_4E_HXILINX_Lab6new (D0, D1, D2, D3, A0, A1, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+
+   input  A0;
+   input  A1;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+
+      always @ (A0 or A1 or E)
+      begin
+         if(!E)
+           {D3, D2, D1, D0} <= 4'b0000;
+        else
+        begin
+           case({A1,A0})
+             2'b00 : {D3,D2,D1,D0} <= 4'b0001;
+             2'b01 : {D3,D2,D1,D0} <= 4'b0010;
+             2'b10 : {D3,D2,D1,D0} <= 4'b0100;
+             2'b11 : {D3,D2,D1,D0} <= 4'b1000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module AND7_HXILINX_Lab6new (O, I0, I1, I2, I3, I4, I5, I6);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+
+assign O = I0 && I1 && I2 && I3 && I4 && I5 && I6;
+
+endmodule
+`timescale 1ns / 1ps
+
+module Counter_0_to_7_MUSER_Lab6new(CLK, 
+                                    CLK_IN_VCC, 
+                                    Reset, 
+                                    A, 
+                                    B, 
+                                    C, 
+                                    TC);
+
+    input CLK;
+    input CLK_IN_VCC;
+    input Reset;
+   output A;
+   output B;
+   output C;
+   output TC;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_41;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire A_DUMMY;
+   wire B_DUMMY;
+   wire C_DUMMY;
+   
+   assign A = A_DUMMY;
+   assign B = B_DUMMY;
+   assign C = C_DUMMY;
+   (* HU_SET = "XLXI_4_0" *) 
+   CD4CE_HXILINX_Lab6new  XLXI_4 (.C(CLK), 
+                                 .CE(CLK_IN_VCC), 
+                                 .CLR(XLXN_43), 
+                                 .CEO(), 
+                                 .Q0(A_DUMMY), 
+                                 .Q1(B_DUMMY), 
+                                 .Q2(C_DUMMY), 
+                                 .Q3(XLXN_41), 
+                                 .TC(TC));
+   AND4  XLXI_6 (.I0(XLXN_41), 
+                .I1(XLXN_15), 
+                .I2(XLXN_14), 
+                .I3(XLXN_13), 
+                .O(XLXN_44));
+   INV  XLXI_8 (.I(A_DUMMY), 
+               .O(XLXN_13));
+   INV  XLXI_9 (.I(B_DUMMY), 
+               .O(XLXN_14));
+   INV  XLXI_10 (.I(C_DUMMY), 
+                .O(XLXN_15));
+   OR2  XLXI_11 (.I0(XLXN_44), 
+                .I1(Reset), 
+                .O(XLXN_43));
+endmodule
+`timescale 1ns / 1ps
+
+module Lab6new(CLK_Switch, 
+               CLR_Switch, 
+               Preclock, 
+               buz, 
+               common0000, 
+               common1111, 
+               P27, 
+               P29, 
+               P32, 
+               P34, 
+               P35, 
+               P40, 
+               P41);
+
+    input CLK_Switch;
+    input CLR_Switch;
+    input Preclock;
+   output buz;
+   output common0000;
+   output common1111;
+   output P27;
+   output P29;
+   output P32;
+   output P34;
+   output P35;
+   output P40;
+   output P41;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_97;
+   wire XLXN_98;
+   wire XLXN_99;
+   wire XLXN_100;
+   wire XLXN_101;
+   wire XLXN_118;
+   wire XLXN_126;
+   wire XLXN_131;
+   wire XLXN_132;
+   wire XLXN_133;
+   wire XLXN_137;
+   wire XLXN_138;
+   wire XLXN_141;
+   wire XLXN_153;
+   wire XLXN_154;
+   wire XLXN_155;
+   wire XLXN_156;
+   wire XLXN_157;
+   wire XLXN_158;
+   wire XLXN_159;
+   wire XLXN_160;
+   wire XLXN_161;
+   wire XLXN_162;
+   wire XLXN_164;
+   wire XLXN_165;
+   
+   MuxA_D_CLK  XLXI_3 (.A0(XLXN_156), 
+                      .A1(XLXN_160), 
+                      .B0(XLXN_157), 
+                      .B1(XLXN_161), 
+                      .CLK(XLXN_126), 
+                      .C0(XLXN_158), 
+                      .C1(XLXN_162), 
+                      .D0(XLXN_159), 
+                      .D1(XLXN_118), 
+                      .A(XLXN_1), 
+                      .B(XLXN_2), 
+                      .C(XLXN_3), 
+                      .D(XLXN_4));
+   FFFFISNH  XLXI_5 (.CLK(XLXN_57), 
+                    .clkswitch(CLK_Switch), 
+                    .CLRIN(XLXN_164), 
+                    .A(XLXN_156), 
+                    .B(XLXN_157), 
+                    .C(XLXN_158), 
+                    .D(XLXN_159));
+   DIVIDER60  XLXI_7 (.CLK(Preclock), 
+                     .Q(XLXN_131));
+   DIVIDER10  XLXI_8 (.CLK(Preclock), 
+                     .Q(XLXN_57));
+   DIVIDER25  XLXI_9 (.CLK(Preclock), 
+                     .Q(XLXN_58));
+   sevensegsixnew  XLXI_10 (.SW0_A(XLXN_1), 
+                           .SW1_B(XLXN_2), 
+                           .SW2_C(XLXN_3), 
+                           .SW3_D(XLXN_4), 
+                           .aa(P41), 
+                           .b(P40), 
+                           .c(P35), 
+                           .dd(P34), 
+                           .e(P32), 
+                           .f(P29), 
+                           .g(P27));
+   AND4B4  XLXI_11 (.I0(XLXN_159), 
+                   .I1(XLXN_157), 
+                   .I2(XLXN_158), 
+                   .I3(XLXN_156), 
+                   .O(XLXN_97));
+   AND4B3  XLXI_20 (.I0(XLXN_156), 
+                   .I1(XLXN_158), 
+                   .I2(XLXN_159), 
+                   .I3(XLXN_157), 
+                   .O(XLXN_98));
+   AND4B3  XLXI_21 (.I0(XLXN_156), 
+                   .I1(XLXN_157), 
+                   .I2(XLXN_159), 
+                   .I3(XLXN_158), 
+                   .O(XLXN_99));
+   AND4B2  XLXI_22 (.I0(XLXN_156), 
+                   .I1(XLXN_159), 
+                   .I2(XLXN_157), 
+                   .I3(XLXN_158), 
+                   .O(XLXN_100));
+   AND4B3  XLXI_24 (.I0(XLXN_156), 
+                   .I1(XLXN_158), 
+                   .I2(XLXN_157), 
+                   .I3(XLXN_159), 
+                   .O(XLXN_101));
+   OR5  XLXI_25 (.I0(XLXN_101), 
+                .I1(XLXN_100), 
+                .I2(XLXN_99), 
+                .I3(XLXN_98), 
+                .I4(XLXN_97), 
+                .O(XLXN_141));
+   Counter_0_to_7_MUSER_Lab6new  XLXI_26 (.CLK(XLXN_58), 
+                                         .CLK_IN_VCC(CLK_Switch), 
+                                         .Reset(XLXN_164), 
+                                         .A(XLXN_160), 
+                                         .B(XLXN_161), 
+                                         .C(XLXN_162), 
+                                         .TC());
+   AND2B1  XLXI_32 (.I0(CLK_Switch), 
+                   .I1(XLXN_141), 
+                   .O(buz));
+   GND  XLXI_33 (.G(XLXN_118));
+   DIVIDER60  XLXI_36 (.CLK(Preclock), 
+                      .Q(XLXN_126));
+   (* HU_SET = "XLXI_37_1" *) 
+   D2_4E_HXILINX_Lab6new  XLXI_37 (.A0(XLXN_131), 
+                                  .A1(XLXN_132), 
+                                  .E(XLXN_133), 
+                                  .D0(XLXN_137), 
+                                  .D1(XLXN_138), 
+                                  .D2(), 
+                                  .D3());
+   GND  XLXI_38 (.G(XLXN_132));
+   VCC  XLXI_39 (.P(XLXN_133));
+   INV  XLXI_42 (.I(XLXN_137), 
+                .O(common0000));
+   INV  XLXI_43 (.I(XLXN_138), 
+                .O(common1111));
+   AND2  XLXI_45 (.I0(), 
+                 .I1(), 
+                 .O());
+   (* HU_SET = "XLXI_46_2" *) 
+   AND7_HXILINX_Lab6new  XLXI_46 (.I0(XLXN_162), 
+                                 .I1(XLXN_161), 
+                                 .I2(XLXN_160), 
+                                 .I3(XLXN_155), 
+                                 .I4(XLXN_154), 
+                                 .I5(XLXN_153), 
+                                 .I6(XLXN_159), 
+                                 .O(XLXN_165));
+   INV  XLXI_47 (.I(XLXN_158), 
+                .O(XLXN_153));
+   INV  XLXI_48 (.I(XLXN_157), 
+                .O(XLXN_154));
+   INV  XLXI_49 (.I(XLXN_156), 
+                .O(XLXN_155));
+   OR2  XLXI_51 (.I0(CLR_Switch), 
+                .I1(XLXN_165), 
+                .O(XLXN_164));
+endmodule

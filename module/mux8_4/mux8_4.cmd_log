@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family spartan6 -verilog mux8_4_drc.vf -w D:/DigitalSystem/module/mux8_4/mux8_4.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog mux8_4_drc.vf -w D:/DigitalSystem/module/mux8_4/mux8_4.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog mux8_4_drc.vf -w D:/DigitalSystem/module/mux8_4/mux8_4.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog mux8_4_drc.vf -w D:/DigitalSystem/module/mux8_4/mux8_4.sch 
+xst -intstyle ise -ifn "D:/DigitalSystem/module/mux8_4/mux8_4.xst" -ofn "D:/DigitalSystem/module/mux8_4/mux8_4.syr" 

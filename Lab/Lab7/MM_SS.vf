@@ -1,0 +1,162 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MM_SS.vf
+// /___/   /\     Timestamp : 10/21/2022 01:40:59
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalSystem/Lab/Lab7/MM_SS.vf -w D:/DigitalSystem/Lab/Lab7/MM_SS.sch
+//Design Name: MM_SS
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CE_HXILINX_MM_SS(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module MM_SS(BT, 
+             BTCLR, 
+             CLK, 
+             M1, 
+             M2, 
+             S1, 
+             S2);
+
+    input BT;
+    input BTCLR;
+    input CLK;
+   output [3:0] M1;
+   output [3:0] M2;
+   output [3:0] S1;
+   output [3:0] S2;
+   
+   wire XLXN_25;
+   wire XLXN_34;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_67;
+   wire XLXN_68;
+   wire XLXN_69;
+   wire XLXN_70;
+   wire [3:0] M1_DUMMY;
+   wire [3:0] M2_DUMMY;
+   wire [3:0] S1_DUMMY;
+   wire [3:0] S2_DUMMY;
+   
+   assign M1[3:0] = M1_DUMMY[3:0];
+   assign M2[3:0] = M2_DUMMY[3:0];
+   assign S1[3:0] = S1_DUMMY[3:0];
+   assign S2[3:0] = S2_DUMMY[3:0];
+   (* HU_SET = "XLXI_1_24" *) 
+   CB4CE_HXILINX_MM_SS  XLXI_1 (.C(CLK), 
+                               .CE(BT), 
+                               .CLR(XLXN_67), 
+                               .CEO(), 
+                               .Q0(S2_DUMMY[0]), 
+                               .Q1(S2_DUMMY[1]), 
+                               .Q2(S2_DUMMY[2]), 
+                               .Q3(S2_DUMMY[3]), 
+                               .TC());
+   AND4B2  XLXI_2 (.I0(S2_DUMMY[0]), 
+                  .I1(S2_DUMMY[2]), 
+                  .I2(S2_DUMMY[1]), 
+                  .I3(S2_DUMMY[3]), 
+                  .O(XLXN_39));
+   (* HU_SET = "XLXI_3_27" *) 
+   CB4CE_HXILINX_MM_SS  XLXI_3 (.C(XLXN_39), 
+                               .CE(BT), 
+                               .CLR(XLXN_68), 
+                               .CEO(), 
+                               .Q0(S1_DUMMY[0]), 
+                               .Q1(S1_DUMMY[1]), 
+                               .Q2(S1_DUMMY[2]), 
+                               .Q3(S1_DUMMY[3]), 
+                               .TC());
+   AND4B2  XLXI_4 (.I0(S1_DUMMY[0]), 
+                  .I1(S1_DUMMY[3]), 
+                  .I2(S1_DUMMY[1]), 
+                  .I3(S1_DUMMY[2]), 
+                  .O(XLXN_40));
+   (* HU_SET = "XLXI_5_25" *) 
+   CB4CE_HXILINX_MM_SS  XLXI_5 (.C(XLXN_40), 
+                               .CE(BT), 
+                               .CLR(XLXN_69), 
+                               .CEO(), 
+                               .Q0(M2_DUMMY[0]), 
+                               .Q1(M2_DUMMY[1]), 
+                               .Q2(M2_DUMMY[2]), 
+                               .Q3(M2_DUMMY[3]), 
+                               .TC());
+   AND4B2  XLXI_6 (.I0(M2_DUMMY[0]), 
+                  .I1(M2_DUMMY[2]), 
+                  .I2(M2_DUMMY[1]), 
+                  .I3(M2_DUMMY[3]), 
+                  .O(XLXN_25));
+   (* HU_SET = "XLXI_7_26" *) 
+   CB4CE_HXILINX_MM_SS  XLXI_7 (.C(XLXN_25), 
+                               .CE(BT), 
+                               .CLR(XLXN_70), 
+                               .CEO(), 
+                               .Q0(M1_DUMMY[0]), 
+                               .Q1(M1_DUMMY[1]), 
+                               .Q2(M1_DUMMY[2]), 
+                               .Q3(M1_DUMMY[3]), 
+                               .TC());
+   AND4B2  XLXI_8 (.I0(M1_DUMMY[0]), 
+                  .I1(M1_DUMMY[2]), 
+                  .I2(M1_DUMMY[1]), 
+                  .I3(M1_DUMMY[3]), 
+                  .O(XLXN_34));
+   OR2  XLXI_13 (.I0(XLXN_39), 
+                .I1(BTCLR), 
+                .O(XLXN_67));
+   OR2  XLXI_14 (.I0(XLXN_40), 
+                .I1(BTCLR), 
+                .O(XLXN_68));
+   OR2  XLXI_15 (.I0(XLXN_25), 
+                .I1(BTCLR), 
+                .O(XLXN_69));
+   OR2  XLXI_16 (.I0(XLXN_34), 
+                .I1(BTCLR), 
+                .O(XLXN_70));
+endmodule

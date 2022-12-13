@@ -1,0 +1,11 @@
+sch2hdl -intstyle ise -family spartan6 -verilog FullAdder8bit_drc.vf -w D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sch 
+sch2sym -intstyle ise -family spartan6 -refsym FullAdder8bit D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sch D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sym 
+xst -intstyle ise -ifn "D:/DigitalSystem/Lab/Lab8/FullAdder8bit.xst" -ofn "D:/DigitalSystem/Lab/Lab8/FullAdder8bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 FullAdder8bit.ngc FullAdder8bit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FullAdder8bit_map.ncd FullAdder8bit.ngd FullAdder8bit.pcf 
+par -w -intstyle ise -ol high -mt off FullAdder8bit_map.ncd FullAdder8bit.ncd FullAdder8bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FullAdder8bit.twx FullAdder8bit.ncd -o FullAdder8bit.twr FullAdder8bit.pcf 
+sch2hdl -intstyle ise -family spartan6 -verilog FullAdder8bit_drc.vf -w D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym FullAdder8bit D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sch D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog FullAdder8bit_drc.vf -w D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym FullAdder8bit D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sch D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sym 

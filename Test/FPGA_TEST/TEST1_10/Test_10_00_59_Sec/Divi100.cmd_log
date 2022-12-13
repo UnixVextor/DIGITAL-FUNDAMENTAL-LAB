@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Divi100.vhd -prj LabTestSecond -o Divi100.spl -module Divi100 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w Divi100.spl {C:/Users/DreaMxickZen/Desktop/LabTestSecond - 10/Divi100.sym} 

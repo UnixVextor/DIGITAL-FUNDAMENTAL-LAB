@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym sevenseg D:/DigitalSystem/module/sevensegment0-9NoCommon/sevenseg.sch D:/DigitalSystem/Lab/lab6/sevenseg.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym sevenseg D:/DigitalSystem/module/sevensegment0-9NoCommon/sevenseg.sch D:/DigitalSystem/Lab/lab6/sevenseg.sym 

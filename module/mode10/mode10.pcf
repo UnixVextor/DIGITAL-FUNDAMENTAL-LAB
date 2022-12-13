@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Sep 16 15:38:48 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "INPUT" LOCATE = SITE "P50" LEVEL 1;
+COMP "OUTPUT" LOCATE = SITE "P82" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\DigitalSystem\module\mode10\mode10.ncd
+OUTFILE=D:\DigitalSystem\module\mode10\mode10.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\DigitalSystem\module\mode10
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,93 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/DigitalSystem/Lab/Lab5_3/pa.fromHdl.tcl
+# create_project -name Lab5_3 -dir "D:/DigitalSystem/Lab/Lab5_3/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Lab5_3.ucf" [current_fileset -constrset]
+Adding file 'D:/DigitalSystem/Lab/Lab5_3/Lab5_3.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {sevensegmen4bit.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {mode10.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Lab5_3.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Lab5_3 $srcset
+# add_files [list {Lab5_3.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/DigitalSystem/Lab/Lab5_3/sevensegmen4bit.vf" into library work
+Analyzing Verilog file "D:/DigitalSystem/Lab/Lab5_3/mode10.vf" into library work
+Analyzing Verilog file "D:/DigitalSystem/Lab/Lab5_3/Lab5_3.vf" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/DigitalSystem/Lab/Lab5_3/Lab5_3.ucf]
+Finished Parsing UCF File [D:/DigitalSystem/Lab/Lab5_3/Lab5_3.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 5c28eeba
+open_rtl_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 551.266 ; gain = 129.371
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P50 [get_ports CLK_P50]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports P27]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports P29]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports P30]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports P32]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports P33]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports P34]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports P35]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports P40]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports P41]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports P43]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports P44]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports PB3_P47]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Sep 16 17:34:23 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

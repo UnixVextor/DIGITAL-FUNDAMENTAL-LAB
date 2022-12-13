@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Nov 25 20:02:40 2022
+# Process ID: 12756
+# Log file: C:/.Xilinx/Test/counter0_9/planAhead_run_3/planAhead.log
+# Journal file: C:/.Xilinx/Test/counter0_9/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/.Xilinx/Test/counter0_9/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P47 [get_ports BT_P47]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports CLK_P123]
+endgroup
+save_constraints
+refresh_design
+startgroup
+set_property package_pin P43 [get_ports com1_P43]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports com2_P33]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports com3_P30]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports common1_P44]
+endgroup
+save_constraints

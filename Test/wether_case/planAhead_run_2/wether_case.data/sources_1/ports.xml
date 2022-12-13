@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="a_P55" Dir="IN"/>
+		<Port Id="b_P56" Dir="IN"/>
+		<Port Id="c_P57" Dir="IN"/>
+		<Port Id="d_P58" Dir="IN"/>
+		<Port Id="e_P59" Dir="IN"/>
+		<Port Id="a_41" Dir="OUT"/>
+		<Port Id="b40" Dir="OUT"/>
+		<Port Id="COM0_p44" Dir="OUT"/>
+		<Port Id="COM1_43" Dir="OUT"/>
+		<Port Id="COM2_P33" Dir="OUT"/>
+		<Port Id="COM3_p30" Dir="OUT"/>
+		<Port Id="c_35" Dir="OUT"/>
+		<Port Id="d_34" Dir="OUT"/>
+		<Port Id="e_32" Dir="OUT"/>
+		<Port Id="f_29" Dir="OUT"/>
+		<Port Id="g_27" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

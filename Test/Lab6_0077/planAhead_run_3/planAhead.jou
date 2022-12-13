@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Nov 26 00:01:41 2022
+# Process ID: 9644
+# Log file: C:/Users/XickZenF5/Desktop/DigitalLab081065/DigitalLab/Lab6_0077/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/XickZenF5/Desktop/DigitalLab081065/DigitalLab/Lab6_0077/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/XickZenF5/Desktop/DigitalLab081065/DigitalLab/Lab6_0077/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P83 [get_ports buz]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports CLK_Switch]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports CLR_Switch]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports CLR_Switch]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports com00]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports com11]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports P27]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports Preclock]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports P41]
+endgroup
+set_property package_pin "" [get_ports [list  P35]]
+startgroup
+set_property package_pin P40 [get_ports P40]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports P35]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports P34]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports P32]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports P29]
+endgroup
+save_constraints

@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family spartan6 -verilog subtract8bits_drc.vf -w D:/DigitalSystem/Lab/Lab9/subtract8bits.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog subtract8bits_drc.vf -w D:/DigitalSystem/Lab/Lab9/subtract8bits.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog subtract8bits_drc.vf -w D:/DigitalSystem/Lab/Lab9/subtract8bits.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym subtract8bits D:/DigitalSystem/Lab/Lab9/subtract8bits.sch D:/DigitalSystem/Lab/Lab9/subtract8bits.sym 

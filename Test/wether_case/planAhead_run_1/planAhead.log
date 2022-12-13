@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Nov 25 22:28:48 2022
+# Process ID: 21108
+# Log file: D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/planAhead_run_1/planAhead.log
+# Journal file: D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/pa.fromHdl.tcl}
+# create_project -name wether_case -dir "D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "weather.ucf" [current_fileset -constrset]
+Adding file 'D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/weather.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {weather.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top weather $srcset
+# add_files [list {weather.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/weather.vf" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/weather.ucf]
+Finished Parsing UCF File [D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/weather.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 8b0046fe
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports a_41]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports a_P55]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b40]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports b_P56]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c_35]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports c_P57]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d_34]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports d_P58]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e_32]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports e_P59]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f_29]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g_27]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case\planAhead_pid21108.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Nov 25 22:29:45 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,130 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab5_3.vf
+// /___/   /\     Timestamp : 10/13/2022 01:05:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalSystem/Lab/Lab5_3/Lab5_3.vf -w D:/DigitalSystem/Lab/Lab5_3/Lab5_3.sch
+//Design Name: Lab5_3
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CE_HXILINX_Lab5_3(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Lab5_3(CLK_P50, 
+              PB3_P47, 
+              P27, 
+              P29, 
+              P30, 
+              P32, 
+              P33, 
+              P34, 
+              P35, 
+              P40, 
+              P41, 
+              P43, 
+              P44);
+
+    input CLK_P50;
+    input PB3_P47;
+   output P27;
+   output P29;
+   output P30;
+   output P32;
+   output P33;
+   output P34;
+   output P35;
+   output P40;
+   output P41;
+   output P43;
+   output P44;
+   
+   wire XLXN_47;
+   wire XLXN_64;
+   wire XLXN_71;
+   wire XLXN_72;
+   wire XLXN_93;
+   wire XLXN_95;
+   wire XLXN_96;
+   wire XLXN_97;
+   
+   sevensegmen4bit  XLXI_11 (.A(XLXN_96), 
+                            .B(XLXN_95), 
+                            .C(XLXN_97), 
+                            .D(XLXN_93), 
+                            .a_P41(P41), 
+                            .b_P40(P40), 
+                            .COMMON0(P44), 
+                            .COMMON1(P43), 
+                            .COMMON2(P33), 
+                            .COMMON3(P30), 
+                            .c_P35(P35), 
+                            .d_P34(P34), 
+                            .e_P32(P32), 
+                            .f_P29(P29), 
+                            .g_P27(P27));
+   (* HU_SET = "XLXI_20_1" *) 
+   CB4CE_HXILINX_Lab5_3  XLXI_20 (.C(XLXN_71), 
+                                 .CE(XLXN_47), 
+                                 .CLR(XLXN_72), 
+                                 .CEO(), 
+                                 .Q0(XLXN_96), 
+                                 .Q1(XLXN_95), 
+                                 .Q2(XLXN_97), 
+                                 .Q3(XLXN_93), 
+                                 .TC());
+   VCC  XLXI_23 (.P(XLXN_47));
+   AND2  XLXI_24 (.I0(PB3_P47), 
+                 .I1(CLK_P50), 
+                 .O(XLXN_64));
+   mode10  XLXI_25 (.INPUT(XLXN_64), 
+                   .OUTPUT(XLXN_71));
+   AND4B2  XLXI_41 (.I0(XLXN_96), 
+                   .I1(XLXN_97), 
+                   .I2(XLXN_95), 
+                   .I3(XLXN_93), 
+                   .O(XLXN_72));
+endmodule

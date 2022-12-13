@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\mojik\Downloads\counter0_9\counter0_9\count0_5.ncd
+OUTFILE=C:\Users\mojik\Downloads\counter0_9\counter0_9\count0_5.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\mojik\Downloads\counter0_9\counter0_9
+LICENSE=WebPack
+USER_INFO=__0_0_0

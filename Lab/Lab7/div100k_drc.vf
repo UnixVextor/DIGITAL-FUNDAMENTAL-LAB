@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : div100k_drc.vf
+// /___/   /\     Timestamp : 10/21/2022 02:51:23
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog div100k_drc.vf -w D:/DigitalSystem/Lab/Lab7/div100k.sch
+//Design Name: div100k
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module div100k(CLR, 
+               XLXN_8, 
+               OP);
+
+    input CLR;
+    input XLXN_8;
+   output OP;
+   
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   
+   mode10  XLXI_12 (.CLR(CLR), 
+                   .INPUT(XLXN_8), 
+                   .OUTPUT(XLXN_10));
+   mode10  XLXI_13 (.CLR(CLR), 
+                   .INPUT(XLXN_10), 
+                   .OUTPUT(XLXN_11));
+   mode10  XLXI_14 (.CLR(CLR), 
+                   .INPUT(XLXN_11), 
+                   .OUTPUT(XLXN_12));
+   mode10  XLXI_15 (.CLR(CLR), 
+                   .INPUT(XLXN_12), 
+                   .OUTPUT(XLXN_13));
+   mode10  XLXI_16 (.CLR(CLR), 
+                   .INPUT(XLXN_13), 
+                   .OUTPUT(OP));
+endmodule

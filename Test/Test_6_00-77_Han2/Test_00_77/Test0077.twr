@@ -1,0 +1,108 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Test0077.twx Test0077.ncd -o Test0077.twr Test0077.pcf
+-ucf Test0077.ucf
+
+Design file:              Test0077.ncd
+Physical constraint file: Test0077.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock P47
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+P46         |    0.066(R)|      SLOW  |    0.866(R)|      SLOW  |XLXI_2/XLXN_10    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock OSC to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+ComSet0     |         8.809(R)|      SLOW  |         4.704(R)|      FAST  |OSC_BUFGP         |   0.000|
+ComSet1     |         9.320(R)|      SLOW  |         4.952(R)|      FAST  |OSC_BUFGP         |   0.000|
+P27         |        10.257(R)|      SLOW  |         5.299(R)|      FAST  |OSC_BUFGP         |   0.000|
+P29         |         9.780(R)|      SLOW  |         4.951(R)|      FAST  |OSC_BUFGP         |   0.000|
+P32         |        10.113(R)|      SLOW  |         5.025(R)|      FAST  |OSC_BUFGP         |   0.000|
+P34         |        10.095(R)|      SLOW  |         5.103(R)|      FAST  |OSC_BUFGP         |   0.000|
+P35         |        10.059(R)|      SLOW  |         4.924(R)|      FAST  |OSC_BUFGP         |   0.000|
+P40         |        10.603(R)|      SLOW  |         5.196(R)|      FAST  |OSC_BUFGP         |   0.000|
+P41         |        10.268(R)|      SLOW  |         5.384(R)|      FAST  |OSC_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock P47 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+P27         |        12.554(R)|      SLOW  |         7.068(R)|      FAST  |XLXI_2/XLXN_10    |   0.000|
+P29         |        12.409(R)|      SLOW  |         6.747(R)|      FAST  |XLXI_2/XLXN_10    |   0.000|
+P32         |        12.474(R)|      SLOW  |         6.988(R)|      FAST  |XLXI_2/XLXN_10    |   0.000|
+P34         |        12.523(R)|      SLOW  |         6.908(R)|      FAST  |XLXI_2/XLXN_10    |   0.000|
+P35         |        12.442(R)|      SLOW  |         6.887(R)|      FAST  |XLXI_2/XLXN_10    |   0.000|
+P40         |        12.625(R)|      SLOW  |         7.159(R)|      FAST  |XLXI_2/XLXN_10    |   0.000|
+P41         |        12.725(R)|      SLOW  |         7.160(R)|      FAST  |XLXI_2/XLXN_10    |   0.000|
+P83         |        10.961(R)|      SLOW  |         6.039(R)|      FAST  |XLXI_2/XLXN_10    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock OSC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OSC            |    3.885|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock P47
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+P47            |    4.134|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+P47            |P83            |    8.986|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Nov 26 03:06:54 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

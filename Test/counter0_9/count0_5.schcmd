@@ -1,0 +1,5 @@
+add autowire 1744 1728 1840 1776 8 -sn=1
+undo
+select figure at 1110 1001 8 -branches -sn=1
+select figure at 1549 1511 8 -branches -sn=1
+select all in 1549 1511 1645 1531 -branches -enclosed -sn=1

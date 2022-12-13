@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym comparetor4bits D:/DigitalSystem/module/comparetor4bits/comparetor4bits.sch D:/DigitalSystem/Lab/lab6/comparetor4bits.sym 

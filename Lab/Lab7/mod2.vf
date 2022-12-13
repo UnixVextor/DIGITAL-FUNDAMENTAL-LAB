@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mod2.vf
+// /___/   /\     Timestamp : 10/21/2022 02:42:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalSystem/Lab/Lab7/mod2.vf -w D:/DigitalSystem/module/mod2/mod2.sch
+//Design Name: mod2
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_mod2(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module mod2(clr, 
+            I, 
+            O);
+
+    input clr;
+    input I;
+   output O;
+   
+   wire XLXN_1;
+   
+   (* HU_SET = "XLXI_1_17" *) 
+   FJKC_HXILINX_mod2  XLXI_1 (.C(I), 
+                             .CLR(clr), 
+                             .J(XLXN_1), 
+                             .K(XLXN_1), 
+                             .Q(O));
+   VCC  XLXI_3 (.P(XLXN_1));
+endmodule

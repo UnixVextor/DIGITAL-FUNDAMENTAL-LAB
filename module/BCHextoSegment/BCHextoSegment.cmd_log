@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/DigitalSystem/module/BCHextoSegment/BCHextoSegment.xst" -ofn "D:/DigitalSystem/module/BCHextoSegment/BCHextoSegment.syr" 

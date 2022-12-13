@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml BCDtoSegment.twx BCDtoSegment.ncd -o BCDtoSegment.twr
+BCDtoSegment.pcf -ucf BCDtoSegment.ucf
+
+Design file:              BCDtoSegment.ncd
+Physical constraint file: BCDtoSegment.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Q0             |a              |    7.209|
+Q0             |b              |    7.584|
+Q0             |c              |    7.042|
+Q0             |d              |    7.097|
+Q0             |e              |    7.256|
+Q0             |f              |    8.184|
+Q0             |g              |    8.124|
+Q1             |a              |    6.929|
+Q1             |b              |    7.339|
+Q1             |c              |    7.321|
+Q1             |d              |    7.357|
+Q1             |e              |    7.417|
+Q1             |f              |    8.300|
+Q1             |g              |    8.245|
+Q2             |a              |    7.042|
+Q2             |b              |    7.187|
+Q2             |c              |    6.658|
+Q2             |d              |    7.223|
+Q2             |e              |    7.403|
+Q2             |f              |    7.642|
+Q2             |g              |    7.933|
+Q3             |a              |    7.135|
+Q3             |b              |    7.066|
+Q3             |c              |    6.968|
+Q3             |d              |    7.012|
+Q3             |e              |    7.219|
+Q3             |f              |    7.998|
+Q3             |g              |    8.406|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Oct 18 20:19:34 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4554 MB
+
+
+

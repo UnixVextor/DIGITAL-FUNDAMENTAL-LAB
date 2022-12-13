@@ -1,0 +1,5 @@
+
+# PlanAhead Generated physical constraints 
+
+INST "CLK_BUFGP" LOC = P123;
+NET "CLK" LOC = P123;

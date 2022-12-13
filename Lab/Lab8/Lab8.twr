@@ -1,0 +1,187 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Lab8.twx Lab8.ncd -o Lab8.twr Lab8.pcf -ucf Lab8.ucf
+
+Design file:              Lab8.ncd
+Physical constraint file: Lab8.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.776|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Buzzer         |   12.986|
+A<0>           |a_P41          |   15.826|
+A<0>           |b_P40          |   15.636|
+A<0>           |c_P35          |   15.224|
+A<0>           |d_P34          |   15.317|
+A<0>           |e_P32          |   15.602|
+A<0>           |f_P29          |   14.222|
+A<0>           |g_P27          |   14.792|
+A<1>           |Buzzer         |   13.203|
+A<1>           |a_P41          |   16.043|
+A<1>           |b_P40          |   15.853|
+A<1>           |c_P35          |   15.441|
+A<1>           |d_P34          |   15.534|
+A<1>           |e_P32          |   15.819|
+A<1>           |f_P29          |   14.439|
+A<1>           |g_P27          |   15.009|
+A<2>           |Buzzer         |   12.650|
+A<2>           |a_P41          |   15.490|
+A<2>           |b_P40          |   15.300|
+A<2>           |c_P35          |   14.888|
+A<2>           |d_P34          |   14.981|
+A<2>           |e_P32          |   15.266|
+A<2>           |f_P29          |   13.886|
+A<2>           |g_P27          |   14.456|
+A<3>           |Buzzer         |   11.546|
+A<3>           |a_P41          |   14.386|
+A<3>           |b_P40          |   14.196|
+A<3>           |c_P35          |   13.784|
+A<3>           |d_P34          |   13.877|
+A<3>           |e_P32          |   14.162|
+A<3>           |f_P29          |   12.782|
+A<3>           |g_P27          |   13.352|
+A<4>           |Buzzer         |   11.377|
+A<4>           |a_P41          |   14.217|
+A<4>           |b_P40          |   14.027|
+A<4>           |c_P35          |   13.615|
+A<4>           |d_P34          |   13.708|
+A<4>           |e_P32          |   13.993|
+A<4>           |f_P29          |   12.613|
+A<4>           |g_P27          |   13.183|
+A<5>           |Buzzer         |   10.767|
+A<5>           |a_P41          |   13.607|
+A<5>           |b_P40          |   13.417|
+A<5>           |c_P35          |   13.005|
+A<5>           |d_P34          |   13.098|
+A<5>           |e_P32          |   13.383|
+A<5>           |f_P29          |   12.003|
+A<5>           |g_P27          |   12.573|
+A<6>           |Buzzer         |   10.166|
+A<6>           |a_P41          |   13.006|
+A<6>           |b_P40          |   12.816|
+A<6>           |c_P35          |   12.404|
+A<6>           |d_P34          |   12.497|
+A<6>           |e_P32          |   12.782|
+A<6>           |f_P29          |   11.402|
+A<6>           |g_P27          |   11.972|
+A<7>           |Buzzer         |    9.071|
+A<7>           |a_P41          |   12.173|
+A<7>           |b_P40          |   11.983|
+A<7>           |c_P35          |   11.571|
+A<7>           |d_P34          |   11.664|
+A<7>           |e_P32          |   11.949|
+A<7>           |f_P29          |   10.569|
+A<7>           |g_P27          |   11.139|
+B<0>           |Buzzer         |   13.448|
+B<0>           |a_P41          |   16.288|
+B<0>           |b_P40          |   16.098|
+B<0>           |c_P35          |   15.686|
+B<0>           |d_P34          |   15.779|
+B<0>           |e_P32          |   16.064|
+B<0>           |f_P29          |   14.684|
+B<0>           |g_P27          |   15.254|
+B<1>           |Buzzer         |   13.043|
+B<1>           |a_P41          |   15.883|
+B<1>           |b_P40          |   15.693|
+B<1>           |c_P35          |   15.281|
+B<1>           |d_P34          |   15.374|
+B<1>           |e_P32          |   15.659|
+B<1>           |f_P29          |   14.279|
+B<1>           |g_P27          |   14.849|
+B<2>           |Buzzer         |   12.942|
+B<2>           |a_P41          |   15.782|
+B<2>           |b_P40          |   15.592|
+B<2>           |c_P35          |   15.180|
+B<2>           |d_P34          |   15.273|
+B<2>           |e_P32          |   15.558|
+B<2>           |f_P29          |   14.178|
+B<2>           |g_P27          |   14.748|
+B<3>           |Buzzer         |   11.824|
+B<3>           |a_P41          |   14.664|
+B<3>           |b_P40          |   14.474|
+B<3>           |c_P35          |   14.062|
+B<3>           |d_P34          |   14.155|
+B<3>           |e_P32          |   14.440|
+B<3>           |f_P29          |   13.060|
+B<3>           |g_P27          |   13.630|
+B<4>           |Buzzer         |   12.102|
+B<4>           |a_P41          |   14.942|
+B<4>           |b_P40          |   14.752|
+B<4>           |c_P35          |   14.340|
+B<4>           |d_P34          |   14.433|
+B<4>           |e_P32          |   14.718|
+B<4>           |f_P29          |   13.338|
+B<4>           |g_P27          |   13.908|
+B<5>           |Buzzer         |   11.214|
+B<5>           |a_P41          |   14.054|
+B<5>           |b_P40          |   13.864|
+B<5>           |c_P35          |   13.452|
+B<5>           |d_P34          |   13.545|
+B<5>           |e_P32          |   13.830|
+B<5>           |f_P29          |   12.450|
+B<5>           |g_P27          |   13.020|
+B<6>           |Buzzer         |   10.745|
+B<6>           |a_P41          |   13.585|
+B<6>           |b_P40          |   13.395|
+B<6>           |c_P35          |   12.983|
+B<6>           |d_P34          |   13.076|
+B<6>           |e_P32          |   13.361|
+B<6>           |f_P29          |   11.981|
+B<6>           |g_P27          |   12.551|
+B<7>           |Buzzer         |    9.770|
+B<7>           |a_P41          |   12.872|
+B<7>           |b_P40          |   12.682|
+B<7>           |c_P35          |   12.270|
+B<7>           |d_P34          |   12.363|
+B<7>           |e_P32          |   12.648|
+B<7>           |f_P29          |   11.268|
+B<7>           |g_P27          |   11.838|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 19 13:48:42 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

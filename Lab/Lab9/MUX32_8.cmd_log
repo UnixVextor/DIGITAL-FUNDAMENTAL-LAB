@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog MUX32_8_drc.vf -w D:/DigitalSystem/Lab/Lab9/MUX32_8.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym MUX32_8 D:/DigitalSystem/Lab/Lab9/MUX32_8.sch D:/DigitalSystem/Lab/Lab9/MUX32_8.sym 

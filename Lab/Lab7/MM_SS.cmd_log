@@ -1,0 +1,14 @@
+sch2hdl -intstyle ise -family spartan6 -verilog MM_SS_drc.vf -w D:/DigitalSystem/Lab/Lab7/MM_SS.sch 
+sch2sym -intstyle ise -family spartan6 -refsym MM_SS D:/DigitalSystem/Lab/Lab7/MM_SS.sch D:/DigitalSystem/Lab/Lab7/MM_SS.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog MM_SS_drc.vf -w D:/DigitalSystem/Lab/Lab7/MM_SS.sch 
+sch2sym -intstyle ise -family spartan6 -refsym MM_SS D:/DigitalSystem/Lab/Lab7/MM_SS.sch D:/DigitalSystem/Lab/Lab7/MM_SS.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym MM_SS D:/DigitalSystem/Lab/Lab7/MM_SS.sch D:/DigitalSystem/Lab/Lab7/MM_SS.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog MM_SS_drc.vf -w D:/DigitalSystem/Lab/Lab7/MM_SS.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym MM_SS D:/DigitalSystem/Lab/Lab7/MM_SS.sch D:/DigitalSystem/Lab/Lab7/MM_SS.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog MM_SS_drc.vf -w D:/DigitalSystem/Lab/Lab7/MM_SS.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym MM_SS D:/DigitalSystem/Lab/Lab7/MM_SS.sch D:/DigitalSystem/Lab/Lab7/MM_SS.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog MM_SS_drc.vf -w D:/DigitalSystem/Lab/Lab7/MM_SS.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym MM_SS D:/DigitalSystem/Lab/Lab7/MM_SS.sch D:/DigitalSystem/Lab/Lab7/MM_SS.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog MM_SS_drc.vf -w D:/DigitalSystem/Lab/Lab7/MM_SS.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym MM_SS D:/DigitalSystem/Lab/Lab7/MM_SS.sch D:/DigitalSystem/Lab/Lab7/MM_SS.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym MM_SS D:/DigitalSystem/Lab/Lab7/MM_SS.sch D:/DigitalSystem/Lab/Lab7/MM_SS.sym 

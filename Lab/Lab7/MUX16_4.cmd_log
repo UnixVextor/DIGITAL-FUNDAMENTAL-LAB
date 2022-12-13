@@ -1,0 +1,15 @@
+sch2hdl -intstyle ise -family spartan6 -verilog MUX16_4_drc.vf -w D:/DigitalSystem/Lab/Lab7/MUX16_4.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog MUX16_4_drc.vf -w D:/DigitalSystem/Lab/Lab7/MUX16_4.sch 
+sch2sym -intstyle ise -family spartan6 -refsym MUX16_4 D:/DigitalSystem/Lab/Lab7/MUX16_4.sch D:/DigitalSystem/Lab/Lab7/MUX16_4.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog MUX16_4_drc.vf -w D:/DigitalSystem/Lab/Lab7/MUX16_4.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog MUX16_4_drc.vf -w D:/DigitalSystem/Lab/Lab7/MUX16_4.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym MUX16_4 D:/DigitalSystem/Lab/Lab7/MUX16_4.sch D:/DigitalSystem/Lab/Lab7/MUX16_4.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym MUX16_4 D:/DigitalSystem/Lab/Lab7/MUX16_4.sch D:/DigitalSystem/Lab/Lab7/MUX16_4.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog MUX16_4_drc.vf -w D:/DigitalSystem/Lab/Lab7/MUX16_4.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym MUX16_4 D:/DigitalSystem/Lab/Lab7/MUX16_4.sch D:/DigitalSystem/Lab/Lab7/MUX16_4.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog MUX16_4_drc.vf -w D:/DigitalSystem/Lab/Lab7/MUX16_4.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym MUX16_4 D:/DigitalSystem/Lab/Lab7/MUX16_4.sch D:/DigitalSystem/Lab/Lab7/MUX16_4.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym MUX16_4 D:/DigitalSystem/Lab/Lab7/MUX16_4.sch D:/DigitalSystem/Lab/Lab7/MUX16_4.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog MUX16_4_drc.vf -w D:/DigitalSystem/Lab/Lab7/MUX16_4.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym MUX16_4 D:/DigitalSystem/Lab/Lab7/MUX16_4.sch D:/DigitalSystem/Lab/Lab7/MUX16_4.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym MUX16_4 D:/DigitalSystem/Lab/Lab7/MUX16_4.sch D:/DigitalSystem/Lab/Lab7/MUX16_4.sym 

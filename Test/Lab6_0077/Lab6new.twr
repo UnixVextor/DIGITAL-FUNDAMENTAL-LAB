@@ -1,0 +1,108 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Lab6new.twx Lab6new.ncd -o Lab6new.twr Lab6new.pcf -ucf
+Lab6new.ucf
+
+Design file:              Lab6new.ncd
+Physical constraint file: Lab6new.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK_Switch
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+CLR_Switch  |    0.095(R)|      SLOW  |    0.855(R)|      SLOW  |XLXI_5/XLXN_10    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK_Switch to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+P27         |        11.668(R)|      SLOW  |         6.485(R)|      FAST  |XLXI_5/XLXN_10    |   0.000|
+P29         |        11.495(R)|      SLOW  |         6.123(R)|      FAST  |XLXI_5/XLXN_10    |   0.000|
+P32         |        11.248(R)|      SLOW  |         6.182(R)|      FAST  |XLXI_5/XLXN_10    |   0.000|
+P34         |        11.968(R)|      SLOW  |         6.370(R)|      FAST  |XLXI_5/XLXN_10    |   0.000|
+P35         |        11.371(R)|      SLOW  |         6.321(R)|      FAST  |XLXI_5/XLXN_10    |   0.000|
+P40         |        11.573(R)|      SLOW  |         6.535(R)|      FAST  |XLXI_5/XLXN_10    |   0.000|
+P41         |        12.028(R)|      SLOW  |         6.462(R)|      FAST  |XLXI_5/XLXN_10    |   0.000|
+buz         |        11.193(R)|      SLOW  |         5.983(R)|      FAST  |XLXI_5/XLXN_10    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock Preclock to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+P27         |         9.972(R)|      SLOW  |         4.972(R)|      FAST  |Preclock_BUFGP    |   0.000|
+P29         |         9.588(R)|      SLOW  |         4.835(R)|      FAST  |Preclock_BUFGP    |   0.000|
+P32         |         9.554(R)|      SLOW  |         4.690(R)|      FAST  |Preclock_BUFGP    |   0.000|
+P34         |        10.061(R)|      SLOW  |         4.864(R)|      FAST  |Preclock_BUFGP    |   0.000|
+P35         |         9.806(R)|      SLOW  |         4.909(R)|      FAST  |Preclock_BUFGP    |   0.000|
+P40         |        10.052(R)|      SLOW  |         5.047(R)|      FAST  |Preclock_BUFGP    |   0.000|
+P41         |        10.163(R)|      SLOW  |         4.958(R)|      FAST  |Preclock_BUFGP    |   0.000|
+common0000  |         8.298(R)|      SLOW  |         4.406(R)|      FAST  |Preclock_BUFGP    |   0.000|
+common1111  |         9.042(R)|      SLOW  |         4.844(R)|      FAST  |Preclock_BUFGP    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK_Switch
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_Switch     |    3.616|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Preclock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Preclock       |    3.613|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CLK_Switch     |buz            |    8.940|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Nov 26 00:48:26 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

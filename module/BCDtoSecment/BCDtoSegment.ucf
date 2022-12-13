@@ -1,0 +1,20 @@
+
+
+NET "Q3" LOC = P55;
+NET "Q2" LOC = P56;
+NET "Q1" LOC = P57;
+NET "Q0" LOC = P58;
+NET "a" LOC = P41;
+NET "b" LOC = P40;
+NET "c" LOC = P35;
+NET "d" LOC = P34;
+NET "e" LOC = P32;
+NET "f" LOC = P29;
+NET "g" LOC = P27;
+
+# PlanAhead Generated physical constraints 
+
+NET "Common0" LOC = P44;
+NET "Common1" LOC = P43;
+NET "Common2" LOC = P33;
+NET "Common3" LOC = P30;

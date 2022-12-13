@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym seven_seg_0toF C:/.Xilinx/Test/counter0_9/seven_seg_0toF.sch C:/.Xilinx/Test/counter0_9/seven_seg_0toF.sym 

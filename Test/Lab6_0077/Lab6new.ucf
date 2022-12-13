@@ -1,0 +1,16 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "buz" LOC = P83;
+NET "CLK_Switch" LOC = P47;
+NET "CLR_Switch" LOC = P46;
+NET "common0000" LOC = P44;
+NET "common1111" LOC = P43;
+NET "P27" LOC = P27;
+NET "Preclock" LOC = P123;
+NET "P41" LOC = P41;
+NET "P40" LOC = P40;
+NET "P35" LOC = P35;
+NET "P34" LOC = P34;
+NET "P32" LOC = P32;
+NET "P29" LOC = P29;

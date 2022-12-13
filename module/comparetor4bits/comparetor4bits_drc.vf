@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : comparetor4bits_drc.vf
+// /___/   /\     Timestamp : 10/09/2022 01:54:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog comparetor4bits_drc.vf -w D:/DigitalSystem/module/comparetor4bits/comparetor4bits.sch
+//Design Name: comparetor4bits
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module COMP4_HXILINX_comparetor4bits (EQ, A0, A1, A2, A3, B0, B1, B2, B3);
+    
+
+   output EQ;
+
+   input A0;
+   input A1;
+   input A2;
+   input A3;
+   input B0;
+   input B1;
+   input B2;
+   input B3;
+
+   assign EQ = ((A0==B0) && (A1==B1) && (A2==B2) && (A3==B3)) ;
+
+endmodule
+`timescale 1ns / 1ps
+
+module comparetor4bits(A, 
+                       B, 
+                       Buzzer);
+
+    input [3:0] A;
+    input [3:0] B;
+   output Buzzer;
+   
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   COMP4_HXILINX_comparetor4bits  XLXI_1 (.A0(A[0]), 
+                                         .A1(A[1]), 
+                                         .A2(A[2]), 
+                                         .A3(A[3]), 
+                                         .B0(B[0]), 
+                                         .B1(B[1]), 
+                                         .B2(B[2]), 
+                                         .B3(B[3]), 
+                                         .EQ(Buzzer));
+endmodule

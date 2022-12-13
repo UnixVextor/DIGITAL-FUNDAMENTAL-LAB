@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\DigitalSystem\Lab\Lab5_3\Lab5_3.ncd
+OUTFILE=D:\DigitalSystem\Lab\Lab5_3\Lab5_3.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\DigitalSystem\Lab\Lab5_3
+LICENSE=WebPack
+USER_INFO=__0_0_0

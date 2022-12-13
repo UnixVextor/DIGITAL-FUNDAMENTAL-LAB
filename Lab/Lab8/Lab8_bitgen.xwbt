@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\DigitalSystem\Lab\Lab8\Lab8.ncd
+OUTFILE=D:\DigitalSystem\Lab\Lab8\Lab8.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\DigitalSystem\Lab\Lab8
+LICENSE=WebPack
+USER_INFO=__0_0_0

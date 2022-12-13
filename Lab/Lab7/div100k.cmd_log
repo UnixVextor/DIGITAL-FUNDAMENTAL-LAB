@@ -1,0 +1,10 @@
+sch2hdl -intstyle ise -family spartan6 -verilog div100k_drc.vf -w D:/DigitalSystem/Lab/Lab7/div100k.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym div100k D:/DigitalSystem/Lab/Lab7/div100k.sch D:/DigitalSystem/Lab/Lab7/div100k.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym div100k D:/DigitalSystem/Lab/Lab7/div100k.sch D:/DigitalSystem/Lab/Lab7/div100k.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym div100k D:/DigitalSystem/Lab/Lab7/div100k.sch D:/DigitalSystem/Lab/Lab7/div100k.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym div100k D:/DigitalSystem/Lab/Lab7/div100k.sch D:/DigitalSystem/Lab/Lab7/div100k.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog div100k_drc.vf -w D:/DigitalSystem/Lab/Lab7/div100k.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym div100k D:/DigitalSystem/Lab/Lab7/div100k.sch D:/DigitalSystem/Lab/Lab7/div100k.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym div100k D:/DigitalSystem/Lab/Lab7/div100k.sch D:/DigitalSystem/Lab/Lab7/div100k.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym div100k D:/DigitalSystem/Lab/Lab7/div100k.sch D:/DigitalSystem/Lab/Lab7/div100k.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym div100k D:/DigitalSystem/Lab/Lab7/div100k.sch D:/DigitalSystem/Lab/Lab7/div100k.sym 

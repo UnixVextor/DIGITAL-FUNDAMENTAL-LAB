@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : div100k_drc.vf
+// /___/   /\     Timestamp : 10/13/2022 13:20:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog div100k_drc.vf -w D:/DigitalSystem/module/div100k/div100k.sch
+//Design Name: div100k
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module div100k(IP, 
+               OP);
+
+    input IP;
+   output OP;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   mode10  XLXI_1 (.INPUT(IP), 
+                  .OUTPUT(XLXN_1));
+   mode10  XLXI_2 (.INPUT(XLXN_1), 
+                  .OUTPUT(XLXN_2));
+   mode10  XLXI_3 (.INPUT(XLXN_2), 
+                  .OUTPUT(XLXN_3));
+   mode10  XLXI_4 (.INPUT(XLXN_3), 
+                  .OUTPUT(XLXN_4));
+   mode10  XLXI_5 (.INPUT(XLXN_4), 
+                  .OUTPUT(OP));
+endmodule

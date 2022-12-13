@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Decoder1_2_drc.vf -w D:/DigitalSystem/Lab/Lab9/Decoder1_2.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Decoder1_2 D:/DigitalSystem/Lab/Lab9/Decoder1_2.sch D:/DigitalSystem/Lab/Lab9/Decoder1_2.sym 

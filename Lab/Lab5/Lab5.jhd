@@ -1,0 +1,3 @@
+MODULE Lab5
+	SUBMODULE sevensegmen4bit
+		INSTANCE XLXI_26

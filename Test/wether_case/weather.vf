@@ -1,0 +1,140 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : weather.vf
+// /___/   /\     Timestamp : 11/25/2022 22:38:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/weather.vf" -w "D:/KMITL/2D/Digital Fundamental/xilinx_workspace/wether_case/weather.sch"
+//Design Name: weather
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module weather(a_P55, 
+               b_P56, 
+               c_P57, 
+               d_P58, 
+               e_P59, 
+               a_41, 
+               b40, 
+               COM0_p44, 
+               COM1_43, 
+               COM2_P33, 
+               COM3_p30, 
+               c_35, 
+               d_34, 
+               e_32, 
+               f_29, 
+               g_27);
+
+    input a_P55;
+    input b_P56;
+    input c_P57;
+    input d_P58;
+    input e_P59;
+   output a_41;
+   output b40;
+   output COM0_p44;
+   output COM1_43;
+   output COM2_P33;
+   output COM3_p30;
+   output c_35;
+   output d_34;
+   output e_32;
+   output f_29;
+   output g_27;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire f_29_DUMMY;
+   
+   assign f_29 = f_29_DUMMY;
+   AND5  XLXI_1 (.I0(XLXN_4), 
+                .I1(d_P58), 
+                .I2(XLXN_3), 
+                .I3(XLXN_2), 
+                .I4(XLXN_1), 
+                .O(XLXN_45));
+   AND5  XLXI_2 (.I0(XLXN_8), 
+                .I1(XLXN_7), 
+                .I2(c_P57), 
+                .I3(XLXN_6), 
+                .I4(XLXN_5), 
+                .O(XLXN_46));
+   AND5  XLXI_3 (.I0(e_P59), 
+                .I1(d_P58), 
+                .I2(c_P57), 
+                .I3(b_P56), 
+                .I4(XLXN_9), 
+                .O(XLXN_47));
+   AND5  XLXI_4 (.I0(XLXN_12), 
+                .I1(XLXN_11), 
+                .I2(XLXN_10), 
+                .I3(b_P56), 
+                .I4(a_P55), 
+                .O(XLXN_48));
+   INV  XLXI_5 (.I(a_P55), 
+               .O(XLXN_1));
+   INV  XLXI_6 (.I(b_P56), 
+               .O(XLXN_2));
+   INV  XLXI_7 (.I(c_P57), 
+               .O(XLXN_3));
+   INV  XLXI_8 (.I(e_P59), 
+               .O(XLXN_4));
+   INV  XLXI_9 (.I(a_P55), 
+               .O(XLXN_5));
+   INV  XLXI_10 (.I(b_P56), 
+                .O(XLXN_6));
+   INV  XLXI_11 (.I(d_P58), 
+                .O(XLXN_7));
+   INV  XLXI_12 (.I(e_P59), 
+                .O(XLXN_8));
+   INV  XLXI_13 (.I(a_P55), 
+                .O(XLXN_9));
+   INV  XLXI_14 (.I(c_P57), 
+                .O(XLXN_10));
+   INV  XLXI_15 (.I(d_P58), 
+                .O(XLXN_11));
+   INV  XLXI_16 (.I(e_P59), 
+                .O(XLXN_12));
+   OR4  XLXI_33 (.I0(XLXN_48), 
+                .I1(XLXN_47), 
+                .I2(XLXN_46), 
+                .I3(XLXN_45), 
+                .O(f_29_DUMMY));
+   VCC  XLXI_35 (.P(g_27));
+   VCC  XLXI_36 (.P(e_32));
+   VCC  XLXI_37 (.P(d_34));
+   VCC  XLXI_38 (.P(c_35));
+   GND  XLXI_39 (.G(a_41));
+   INV  XLXI_40 (.I(f_29_DUMMY), 
+                .O(b40));
+   VCC  XLXI_41 (.P(COM3_p30));
+   VCC  XLXI_42 (.P(COM2_P33));
+   VCC  XLXI_43 (.P(COM1_43));
+   GND  XLXI_44 (.G(COM0_p44));
+endmodule

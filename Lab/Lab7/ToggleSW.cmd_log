@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family spartan6 -verilog ToggleSW_drc.vf -w D:/DigitalSystem/Lab/Lab7/ToggleSW.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ToggleSW D:/DigitalSystem/Lab/Lab7/ToggleSW.sch D:/DigitalSystem/Lab/Lab7/ToggleSW.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog ToggleSW_drc.vf -w D:/DigitalSystem/Lab/Lab7/ToggleSW.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ToggleSW D:/DigitalSystem/Lab/Lab7/ToggleSW.sch D:/DigitalSystem/Lab/Lab7/ToggleSW.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog ToggleSW_drc.vf -w D:/DigitalSystem/Lab/Lab7/ToggleSW.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ToggleSW D:/DigitalSystem/Lab/Lab7/ToggleSW.sch D:/DigitalSystem/Lab/Lab7/ToggleSW.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ToggleSW D:/DigitalSystem/Lab/Lab7/ToggleSW.sch D:/DigitalSystem/Lab/Lab7/ToggleSW.sym 

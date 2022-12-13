@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family spartan6 -refsym counter00_99 D:/DigitalSystem/module/counte00_99/counter00_99.sch D:/DigitalSystem/Lab/lab6/counter00_99.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter00_99 D:/DigitalSystem/module/counte00_99/counter00_99.sch D:/DigitalSystem/Lab/lab6/counter00_99.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog counter00_99_drc.vf -w D:/DigitalSystem/module/counte00_99/counter00_99.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter00_99 D:/DigitalSystem/module/counte00_99/counter00_99.sch D:/DigitalSystem/Lab/lab6/counter00_99.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter00_99 D:/DigitalSystem/module/counte00_99/counter00_99.sch D:/DigitalSystem/Lab/lab6/counter00_99.sym 

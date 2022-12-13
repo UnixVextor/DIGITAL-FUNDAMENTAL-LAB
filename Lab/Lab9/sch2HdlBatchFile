@@ -1,0 +1,13 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/Counter0_3.vf,-w,D:/DigitalSystem/Lab/Lab7/Counter0_3.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/Add8bits.vf,-w,D:/DigitalSystem/Lab/Lab9/Add8bits.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/XOR8bits.vf,-w,D:/DigitalSystem/Lab/Lab9/XOR8bits.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/SHL8bits.vf,-w,D:/DigitalSystem/Lab/Lab9/SHL8bits.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/subtract8bits.vf,-w,D:/DigitalSystem/Lab/Lab9/subtract8bits.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/MUX32_8.vf,-w,D:/DigitalSystem/Lab/Lab9/MUX32_8.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/Lab9.vf,-w,D:/DigitalSystem/Lab/Lab9/Lab9.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/Display.vf,-w,D:/DigitalSystem/Lab/Lab9/Display.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/MUX8_4.vf,-w,D:/DigitalSystem/Lab/Lab9/MUX8_4.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/BCHextoSegment.vf,-w,D:/DigitalSystem/module/BCHextoSegment/BCHextoSegment.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/Decoder1_2.vf,-w,D:/DigitalSystem/Lab/Lab9/Decoder1_2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/div100k.vf,-w,D:/DigitalSystem/module/div100k/div100k.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab9/mode10.vf,-w,D:/DigitalSystem/module/mode10/mode10.sch

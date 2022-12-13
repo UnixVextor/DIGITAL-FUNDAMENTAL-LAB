@@ -1,0 +1,18 @@
+
+
+NET "CLK_P50" LOC = P50;
+NET "P27" LOC = P27;
+NET "P29" LOC = P29;
+NET "P30" LOC = P30;
+NET "P32" LOC = P32;
+NET "P33" LOC = P33;
+NET "P34" LOC = P34;
+NET "P35" LOC = P35;
+NET "P40" LOC = P40;
+NET "P41" LOC = P41;
+NET "P43" LOC = P43;
+NET "P44" LOC = P44;
+
+# PlanAhead Generated physical constraints 
+
+NET "PB3_P47" LOC = P47;

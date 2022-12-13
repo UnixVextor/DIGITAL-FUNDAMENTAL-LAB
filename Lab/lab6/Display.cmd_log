@@ -1,0 +1,15 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Display_drc.vf -w D:/DigitalSystem/Lab/lab6/Display.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Display D:/DigitalSystem/Lab/lab6/Display.sch D:/DigitalSystem/Lab/lab6/Display.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Display_drc.vf -w D:/DigitalSystem/Lab/lab6/Display.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Display_drc.vf -w D:/DigitalSystem/Lab/lab6/Display.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Display_drc.vf -w D:/DigitalSystem/Lab/lab6/Display.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Display D:/DigitalSystem/Lab/lab6/Display.sch D:/DigitalSystem/Lab/lab6/Display.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Display_drc.vf -w D:/DigitalSystem/Lab/lab6/Display.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Display D:/DigitalSystem/Lab/lab6/Display.sch D:/DigitalSystem/Lab/lab6/Display.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Display D:/DigitalSystem/Lab/lab6/Display.sch D:/DigitalSystem/Lab/lab6/Display.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Display_drc.vf -w D:/DigitalSystem/Lab/lab6/Display.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Display D:/DigitalSystem/Lab/lab6/Display.sch D:/DigitalSystem/Lab/lab6/Display.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Display_drc.vf -w D:/DigitalSystem/Lab/lab6/Display.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Display D:/DigitalSystem/Lab/lab6/Display.sch D:/DigitalSystem/Lab/lab6/Display.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Display D:/DigitalSystem/Lab/lab6/Display.sch D:/DigitalSystem/Lab/lab6/Display.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Display D:/DigitalSystem/Lab/lab6/Display.sch D:/DigitalSystem/Lab/lab6/Display.sym 

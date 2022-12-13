@@ -1,0 +1,9 @@
+sch2hdl -intstyle ise -family spartan6 -verilog BCDtoSeg_drc.vf -w D:/DigitalSystem/Lab/lab6/BCDtoSeg.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym BCDtoSeg D:/DigitalSystem/Lab/lab6/BCDtoSeg.sch D:/DigitalSystem/Lab/lab6/BCDtoSeg.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym BCDtoSeg D:/DigitalSystem/Lab/lab6/BCDtoSeg.sch D:/DigitalSystem/Lab/lab6/BCDtoSeg.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog BCDtoSeg_drc.vf -w D:/DigitalSystem/Lab/lab6/BCDtoSeg.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym BCDtoSeg D:/DigitalSystem/Lab/lab6/BCDtoSeg.sch D:/DigitalSystem/Lab/lab6/BCDtoSeg.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog BCDtoSeg_drc.vf -w D:/DigitalSystem/Lab/lab6/BCDtoSeg.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym BCDtoSeg D:/DigitalSystem/Lab/lab6/BCDtoSeg.sch D:/DigitalSystem/Lab/lab6/BCDtoSeg.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym BCDtoSeg D:/DigitalSystem/Lab/lab6/BCDtoSeg.sch D:/DigitalSystem/Lab/lab6/BCDtoSeg.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym BCDtoSeg D:/DigitalSystem/Lab/lab6/BCDtoSeg.sch D:/DigitalSystem/Lab/lab6/BCDtoSeg.sym 

@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/DigitalSystem/module/mod2/mod2.xst" -ofn "D:/DigitalSystem/module/mod2/mod2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 mod2.ngc mod2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mod2_map.ncd mod2.ngd mod2.pcf 
+par -w -intstyle ise -ol high -mt off mod2_map.ncd mod2.ncd mod2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mod2.twx mod2.ncd -o mod2.twr mod2.pcf 

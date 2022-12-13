@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog XOR8bits_drc.vf -w D:/DigitalSystem/Lab/Lab9/XOR8bits.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym XOR8bits D:/DigitalSystem/Lab/Lab9/XOR8bits.sch D:/DigitalSystem/Lab/Lab9/XOR8bits.sym 

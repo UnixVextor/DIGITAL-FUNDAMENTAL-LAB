@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Oct 21 03:24:10 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "d_P34" LOCATE = SITE "P34" LEVEL 1;
+COMP "BTCLR" LOCATE = SITE "P47" LEVEL 1;
+COMP "BT" LOCATE = SITE "P46" LEVEL 1;
+COMP "e_P32" LOCATE = SITE "P32" LEVEL 1;
+COMP "Com0" LOCATE = SITE "P44" LEVEL 1;
+COMP "Com1" LOCATE = SITE "P43" LEVEL 1;
+COMP "Com2" LOCATE = SITE "P33" LEVEL 1;
+COMP "Com3" LOCATE = SITE "P30" LEVEL 1;
+COMP "f_P29" LOCATE = SITE "P29" LEVEL 1;
+COMP "g_P27" LOCATE = SITE "P27" LEVEL 1;
+COMP "a_P41" LOCATE = SITE "P41" LEVEL 1;
+COMP "b_P40" LOCATE = SITE "P40" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P123" LEVEL 1;
+COMP "c_P35" LOCATE = SITE "P35" LEVEL 1;
+COMP "p_P26" LOCATE = SITE "P26" LEVEL 1;
+SCHEMATIC END;
+

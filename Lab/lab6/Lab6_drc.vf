@@ -1,0 +1,190 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab6_drc.vf
+// /___/   /\     Timestamp : 10/09/2022 20:32:59
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog Lab6_drc.vf -w D:/DigitalSystem/Lab/lab6/Lab6.sch
+//Design Name: Lab6
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB2CE_HXILINX_Lab6(CEO, Q0, Q1, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module counter0_1_MUSER_Lab6(I, 
+                             O);
+
+    input I;
+   output O;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   (* HU_SET = "XLXI_3_0" *) 
+   CB2CE_HXILINX_Lab6  XLXI_3 (.C(I), 
+                              .CE(XLXN_3), 
+                              .CLR(O_DUMMY), 
+                              .CEO(), 
+                              .Q0(XLXN_4), 
+                              .Q1(XLXN_5), 
+                              .TC());
+   VCC  XLXI_4 (.P(XLXN_3));
+   AND2B1  XLXI_5 (.I0(XLXN_4), 
+                  .I1(XLXN_5), 
+                  .O(O_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module Display_MUSER_Lab6(A, 
+                          B, 
+                          CLK, 
+                          D, 
+                          P27, 
+                          P29, 
+                          P32, 
+                          P34, 
+                          P35, 
+                          P40, 
+                          P41);
+
+    input [3:0] A;
+    input [3:0] B;
+    input CLK;
+   output [1:0] D;
+   output P27;
+   output P29;
+   output P32;
+   output P34;
+   output P35;
+   output P40;
+   output P41;
+   
+   wire [3:0] O;
+   wire XLXN_24;
+   
+   mux8_4  XLXI_51 (.A(A[3:0]), 
+                   .B(B[3:0]), 
+                   .CLK(XLXN_24), 
+                   .O(O[3:0]));
+   decooder2_1  XLXI_52 (.I(XLXN_24), 
+                        .D(D[1:0]));
+   sevenseg  XLXI_53 (.A(O[0]), 
+                     .B(O[1]), 
+                     .C(O[2]), 
+                     .D(O[3]), 
+                     .a_P41(P41), 
+                     .b_P40(P40), 
+                     .c_P35(P35), 
+                     .d_P34(P34), 
+                     .e_P32(P32), 
+                     .f_P29(P29), 
+                     .g_P27(P27));
+   counter0_1_MUSER_Lab6  XLXI_59 (.I(CLK), 
+                                  .O(XLXN_24));
+endmodule
+`timescale 1ns / 1ps
+
+module Lab6(CLK_P123, 
+            PB3, 
+            Buzzer, 
+            COMMON2, 
+            COMMON3, 
+            D, 
+            XLXN_40, 
+            XLXN_41, 
+            XLXN_42, 
+            XLXN_43, 
+            XLXN_44, 
+            XLXN_45, 
+            XLXN_46);
+
+    input CLK_P123;
+    input PB3;
+   output Buzzer;
+   output COMMON2;
+   output COMMON3;
+   output [1:0] D;
+   output XLXN_40;
+   output XLXN_41;
+   output XLXN_42;
+   output XLXN_43;
+   output XLXN_44;
+   output XLXN_45;
+   output XLXN_46;
+   
+   wire [3:0] XLXN_3;
+   wire [3:0] XLXN_4;
+   wire XLXN_18;
+   wire XLXN_30;
+   wire XLXN_33;
+   
+   VCC  XLXI_11 (.P(COMMON3));
+   VCC  XLXI_12 (.P(COMMON2));
+   counter00_99  XLXI_44 (.CLK(XLXN_18), 
+                         .PB3_P47(PB3), 
+                         .A(XLXN_3[3:0]), 
+                         .B(XLXN_4[3:0]));
+   div100k  XLXI_62 (.IP(CLK_P123), 
+                    .OP(XLXN_18));
+   comparetor4bits  XLXI_63 (.A(XLXN_3[3:0]), 
+                            .B(XLXN_4[3:0]), 
+                            .Buzzer(XLXN_30));
+   AND2  XLXI_65 (.I0(XLXN_30), 
+                 .I1(XLXN_33), 
+                 .O(Buzzer));
+   INV  XLXI_66 (.I(PB3), 
+                .O(XLXN_33));
+   Display_MUSER_Lab6  XLXI_68 (.A(XLXN_3[3:0]), 
+                               .B(XLXN_4[3:0]), 
+                               .CLK(XLXN_18), 
+                               .D(D[1:0]), 
+                               .P27(XLXN_46), 
+                               .P29(XLXN_45), 
+                               .P32(XLXN_44), 
+                               .P34(XLXN_43), 
+                               .P35(XLXN_42), 
+                               .P40(XLXN_41), 
+                               .P41(XLXN_40));
+endmodule

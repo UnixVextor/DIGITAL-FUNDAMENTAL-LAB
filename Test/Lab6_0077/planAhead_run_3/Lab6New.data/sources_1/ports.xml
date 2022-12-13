@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="CLK_Switch" Dir="IN"/>
+		<Port Id="CLR_Switch" Dir="IN"/>
+		<Port Id="Preclock" Dir="IN"/>
+		<Port Id="buz" Dir="OUT"/>
+		<Port Id="com00" Dir="OUT"/>
+		<Port Id="com11" Dir="OUT"/>
+		<Port Id="P27" Dir="OUT"/>
+		<Port Id="P29" Dir="OUT"/>
+		<Port Id="P32" Dir="OUT"/>
+		<Port Id="P34" Dir="OUT"/>
+		<Port Id="P35" Dir="OUT"/>
+		<Port Id="P40" Dir="OUT"/>
+		<Port Id="P41" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

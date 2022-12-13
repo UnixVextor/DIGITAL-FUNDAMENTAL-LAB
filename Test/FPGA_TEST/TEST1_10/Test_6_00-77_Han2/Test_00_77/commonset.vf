@@ -1,0 +1,50 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : commonset.vf
+// /___/   /\     Timestamp : 11/26/2022 02:50:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/commonset.vf -w C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/commonset.sch
+//Design Name: commonset
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module commonset(ComGnd0, 
+                 ComGnd1, 
+                 ComGnd2, 
+                 ComGnd3, 
+                 ComVcc0, 
+                 ComVcc1, 
+                 ComVcc2, 
+                 ComVcc3);
+
+   output ComGnd0;
+   output ComGnd1;
+   output ComGnd2;
+   output ComGnd3;
+   output ComVcc0;
+   output ComVcc1;
+   output ComVcc2;
+   output ComVcc3;
+   
+   
+   VCC  XLXI_1 (.P(ComVcc0));
+   GND  XLXI_2 (.G(ComGnd0));
+   GND  XLXI_3 (.G(ComGnd1));
+   GND  XLXI_4 (.G(ComGnd2));
+   GND  XLXI_5 (.G(ComGnd3));
+   VCC  XLXI_6 (.P(ComVcc1));
+   VCC  XLXI_7 (.P(ComVcc2));
+   VCC  XLXI_8 (.P(ComVcc3));
+endmodule

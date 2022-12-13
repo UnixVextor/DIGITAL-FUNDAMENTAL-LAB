@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Sep 13 09:31:15 2022
+# Process ID: 5072
+# Log file: D:/Lab4/planAhead_run_4/planAhead.log
+# Journal file: D:/Lab4/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Lab4/pa.fromNetlist.tcl

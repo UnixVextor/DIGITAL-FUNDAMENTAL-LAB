@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/DigitalSystem/module/sevensegment0-9NoCommon/sevenseg.xst" -ofn "D:/DigitalSystem/module/sevensegment0-9NoCommon/sevenseg.syr" 

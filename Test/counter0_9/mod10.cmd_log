@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym mod10 C:/.Xilinx/Test/counter0_9/mod10.sch C:/.Xilinx/Test/counter0_9/mod10.sym 

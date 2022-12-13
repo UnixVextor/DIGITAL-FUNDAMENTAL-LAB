@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym mode10 D:/DigitalSystem/module/mode10/mode10.sch D:/DigitalSystem/module/div100k/mode10.sym 

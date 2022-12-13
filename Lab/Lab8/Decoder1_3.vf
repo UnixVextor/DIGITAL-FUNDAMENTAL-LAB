@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Decoder1_3.vf
+// /___/   /\     Timestamp : 10/19/2022 13:32:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalSystem/Lab/Lab8/Decoder1_3.vf -w D:/DigitalSystem/Lab/Lab8/Decoder1_3.sch
+//Design Name: Decoder1_3
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D2_4E_HXILINX_Decoder1_3 (D0, D1, D2, D3, A0, A1, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+
+   input  A0;
+   input  A1;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+
+      always @ (A0 or A1 or E)
+      begin
+         if(!E)
+           {D3, D2, D1, D0} <= 4'b0000;
+        else
+        begin
+           case({A1,A0})
+             2'b00 : {D3,D2,D1,D0} <= 4'b0001;
+             2'b01 : {D3,D2,D1,D0} <= 4'b0010;
+             2'b10 : {D3,D2,D1,D0} <= 4'b0100;
+             2'b11 : {D3,D2,D1,D0} <= 4'b1000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 1ns / 1ps
+
+module Decoder1_3(S, 
+                  Common);
+
+    input [1:0] S;
+   output [2:0] Common;
+   
+   wire XLXN_11;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   
+   (* HU_SET = "XLXI_1_6" *) 
+   D2_4E_HXILINX_Decoder1_3  XLXI_1 (.A0(S[0]), 
+                                    .A1(S[1]), 
+                                    .E(XLXN_11), 
+                                    .D0(XLXN_14), 
+                                    .D1(XLXN_15), 
+                                    .D2(XLXN_16), 
+                                    .D3());
+   VCC  XLXI_3 (.P(XLXN_11));
+   INV  XLXI_4 (.I(XLXN_14), 
+               .O(Common[0]));
+   INV  XLXI_5 (.I(XLXN_15), 
+               .O(Common[1]));
+   INV  XLXI_6 (.I(XLXN_16), 
+               .O(Common[2]));
+endmodule

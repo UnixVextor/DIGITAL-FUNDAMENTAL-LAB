@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym FullAdder D:/DigitalSystem/module/FullAdder/FullAdder.sch D:/DigitalSystem/Lab/Lab8/FullAdder.sym 

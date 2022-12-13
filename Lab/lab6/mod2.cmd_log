@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym mod2 D:/DigitalSystem/module/mod2/mod2.sch D:/DigitalSystem/Lab/lab6/mod2.sym 

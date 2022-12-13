@@ -1,0 +1,137 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Counter0_3.vf
+// /___/   /\     Timestamp : 11/06/2022 16:16:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalSystem/Lab/Lab9/Counter0_3.vf -w D:/DigitalSystem/Lab/Lab7/Counter0_3.sch
+//Design Name: Counter0_3
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CE_HXILINX_Counter0_3(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module D2_4E_HXILINX_Counter0_3 (D0, D1, D2, D3, A0, A1, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+
+   input  A0;
+   input  A1;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+
+      always @ (A0 or A1 or E)
+      begin
+         if(!E)
+           {D3, D2, D1, D0} <= 4'b0000;
+        else
+        begin
+           case({A1,A0})
+             2'b00 : {D3,D2,D1,D0} <= 4'b0001;
+             2'b01 : {D3,D2,D1,D0} <= 4'b0010;
+             2'b10 : {D3,D2,D1,D0} <= 4'b0100;
+             2'b11 : {D3,D2,D1,D0} <= 4'b1000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 1ns / 1ps
+
+module Counter0_3(CLK, 
+                  LED0, 
+                  LED1, 
+                  LED2, 
+                  LED3, 
+                  O);
+
+    input CLK;
+   output LED0;
+   output LED1;
+   output LED2;
+   output LED3;
+   output [1:0] O;
+   
+   wire XLXN_15;
+   wire XLXN_118;
+   wire XLXN_120;
+   wire XLXN_123;
+   wire [1:0] O_DUMMY;
+   
+   assign O[1:0] = O_DUMMY[1:0];
+   VCC  XLXI_5 (.P(XLXN_15));
+   (* HU_SET = "XLXI_14_0" *) 
+   CB4CE_HXILINX_Counter0_3  XLXI_14 (.C(CLK), 
+                                     .CE(XLXN_15), 
+                                     .CLR(XLXN_120), 
+                                     .CEO(), 
+                                     .Q0(O_DUMMY[0]), 
+                                     .Q1(O_DUMMY[1]), 
+                                     .Q2(XLXN_118), 
+                                     .Q3(), 
+                                     .TC());
+   AND3B1  XLXI_15 (.I0(O_DUMMY[1]), 
+                   .I1(O_DUMMY[0]), 
+                   .I2(XLXN_118), 
+                   .O(XLXN_120));
+   (* HU_SET = "XLXI_16_1" *) 
+   D2_4E_HXILINX_Counter0_3  XLXI_16 (.A0(O_DUMMY[0]), 
+                                     .A1(O_DUMMY[1]), 
+                                     .E(XLXN_123), 
+                                     .D0(LED3), 
+                                     .D1(LED2), 
+                                     .D2(LED1), 
+                                     .D3(LED0));
+   VCC  XLXI_17 (.P(XLXN_123));
+endmodule

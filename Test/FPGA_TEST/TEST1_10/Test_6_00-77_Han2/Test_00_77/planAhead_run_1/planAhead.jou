@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Nov 26 02:50:45 2022
+# Process ID: 24484
+# Log file: C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P44 [get_ports ComSet0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports ComSet1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports ComSet2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports ComSet3]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports OSC]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports P27]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports P29]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports P32]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports P34]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports P35]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports P40]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports P41]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports P46]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports P46]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports P47]
+endgroup
+startgroup
+set_property package_pin P83 [get_ports P83]
+endgroup
+save_constraints

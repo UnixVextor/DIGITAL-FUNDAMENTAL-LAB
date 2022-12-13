@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\DreaMxickZen\Desktop\Test_6_00-77_Han2\Test_00_77\Test0077.ncd
+OUTFILE=C:\Users\DreaMxickZen\Desktop\Test_6_00-77_Han2\Test_00_77\Test0077.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\DreaMxickZen\Desktop\Test_6_00-77_Han2\Test_00_77
+LICENSE=WebPack
+USER_INFO=__0_0_0

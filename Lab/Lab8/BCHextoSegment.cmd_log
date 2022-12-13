@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym BCHextoSegment D:/DigitalSystem/module/BCHextoSegment/BCHextoSegment.sch D:/DigitalSystem/Lab/Lab8/BCHextoSegment.sym 

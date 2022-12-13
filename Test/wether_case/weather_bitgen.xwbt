@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\KMITL\2D\Digital Fundamental\xilinx_workspace\wether_case\weather.ncd
+OUTFILE=D:\KMITL\2D\Digital Fundamental\xilinx_workspace\wether_case\weather.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\KMITL\2D\Digital Fundamental\xilinx_workspace\wether_case
+LICENSE=WebPack
+USER_INFO=__0_0_0

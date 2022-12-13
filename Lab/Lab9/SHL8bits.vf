@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SHL8bits.vf
+// /___/   /\     Timestamp : 11/06/2022 16:16:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalSystem/Lab/Lab9/SHL8bits.vf -w D:/DigitalSystem/Lab/Lab9/SHL8bits.sch
+//Design Name: SHL8bits
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SHL8bits(A, 
+                O);
+
+    input [7:0] A;
+   output [7:0] O;
+   
+   
+   GND  XLXI_4 (.G(O[0]));
+   BUF  XLXI_5_0 (.I(A[0]), 
+                 .O(O[1]));
+   BUF  XLXI_5_1 (.I(A[1]), 
+                 .O(O[2]));
+   BUF  XLXI_5_2 (.I(A[2]), 
+                 .O(O[3]));
+   BUF  XLXI_5_3 (.I(A[3]), 
+                 .O(O[4]));
+   BUF  XLXI_5_4 (.I(A[4]), 
+                 .O(O[5]));
+   BUF  XLXI_5_5 (.I(A[5]), 
+                 .O(O[6]));
+   BUF  XLXI_5_6 (.I(A[6]), 
+                 .O(O[7]));
+endmodule

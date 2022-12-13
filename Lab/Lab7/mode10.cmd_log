@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym mode10 D:/DigitalSystem/module/mode10/mode10.sch D:/DigitalSystem/Lab/Lab7/mode10.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog mode10_drc.vf -w D:/DigitalSystem/module/mode10/mode10.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym mode10 D:/DigitalSystem/module/mode10/mode10.sch D:/DigitalSystem/Lab/Lab7/mode10.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym mode10 D:/DigitalSystem/module/mode10/mode10.sch D:/DigitalSystem/Lab/Lab7/mode10.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym mode10 D:/DigitalSystem/module/mode10/mode10.sch D:/DigitalSystem/Lab/Lab7/mode10.sym 

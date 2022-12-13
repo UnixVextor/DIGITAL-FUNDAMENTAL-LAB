@@ -1,0 +1,88 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : FullAdder8bit.vf
+// /___/   /\     Timestamp : 10/19/2022 02:47:25
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalSystem/Lab/Lab8/FullAdder8bit.vf -w D:/DigitalSystem/Lab/Lab8/FullAdder8bit.sch
+//Design Name: FullAdder8bit
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FullAdder8bit(A, 
+                     B, 
+                     D0, 
+                     D1, 
+                     D2);
+
+    input [7:0] A;
+    input [7:0] B;
+   output [3:0] D0;
+   output [3:0] D1;
+   output [3:0] D2;
+   
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_29;
+   wire XLXN_34;
+   
+   FullAdder  XLXI_3 (.A(A[1]), 
+                     .B(B[1]), 
+                     .Cin(XLXN_22), 
+                     .Cout(XLXN_23), 
+                     .S(D0[1]));
+   FullAdder  XLXI_4 (.A(A[2]), 
+                     .B(B[2]), 
+                     .Cin(XLXN_23), 
+                     .Cout(XLXN_24), 
+                     .S(D0[2]));
+   FullAdder  XLXI_5 (.A(A[3]), 
+                     .B(B[3]), 
+                     .Cin(XLXN_24), 
+                     .Cout(XLXN_26), 
+                     .S(D0[3]));
+   FullAdder  XLXI_6 (.A(A[4]), 
+                     .B(B[4]), 
+                     .Cin(XLXN_26), 
+                     .Cout(XLXN_27), 
+                     .S(D1[0]));
+   FullAdder  XLXI_7 (.A(A[5]), 
+                     .B(B[5]), 
+                     .Cin(XLXN_27), 
+                     .Cout(XLXN_28), 
+                     .S(D1[1]));
+   FullAdder  XLXI_8 (.A(A[6]), 
+                     .B(B[6]), 
+                     .Cin(XLXN_28), 
+                     .Cout(XLXN_29), 
+                     .S(D1[2]));
+   FullAdder  XLXI_9 (.A(A[7]), 
+                     .B(B[7]), 
+                     .Cin(XLXN_29), 
+                     .Cout(D2[0]), 
+                     .S(D1[3]));
+   FullAdder  XLXI_10 (.A(A[0]), 
+                      .B(B[0]), 
+                      .Cin(XLXN_34), 
+                      .Cout(XLXN_22), 
+                      .S(D0[0]));
+   GND  XLXI_11 (.G(XLXN_34));
+   GND  XLXI_12 (.G(D2[1]));
+   GND  XLXI_13 (.G(D2[2]));
+   GND  XLXI_14 (.G(D2[3]));
+endmodule

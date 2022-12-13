@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Counter0_3_drc.vf -w D:/DigitalSystem/Lab/Lab7/Counter0_3.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter0_3 D:/DigitalSystem/Lab/Lab7/Counter0_3.sch D:/DigitalSystem/Lab/Lab9/Counter0_3.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Counter0_3_drc.vf -w D:/DigitalSystem/Lab/Lab7/Counter0_3.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter0_3 D:/DigitalSystem/Lab/Lab7/Counter0_3.sch D:/DigitalSystem/Lab/Lab9/Counter0_3.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Counter0_3_drc.vf -w D:/DigitalSystem/Lab/Lab7/Counter0_3.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter0_3 D:/DigitalSystem/Lab/Lab7/Counter0_3.sch D:/DigitalSystem/Lab/Lab9/Counter0_3.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Counter0_3_drc.vf -w D:/DigitalSystem/Lab/Lab7/Counter0_3.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter0_3 D:/DigitalSystem/Lab/Lab7/Counter0_3.sch D:/DigitalSystem/Lab/Lab9/Counter0_3.sym 

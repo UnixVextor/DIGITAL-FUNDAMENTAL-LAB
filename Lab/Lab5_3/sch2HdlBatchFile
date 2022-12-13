@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab5_3/Lab5_3.vf,-w,D:/DigitalSystem/Lab/Lab5_3/Lab5_3.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab5_3/sevensegmen4bit.vf,-w,D:/DigitalSystem/module/sevenSegment0-9/sevensegmen4bit.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/DigitalSystem/Lab/Lab5_3/Lab5_3.vf,-w,D:/DigitalSystem/Lab/Lab5_3/Lab5_3.sch

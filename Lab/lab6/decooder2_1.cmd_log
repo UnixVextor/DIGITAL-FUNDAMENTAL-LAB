@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym decooder2_1 D:/DigitalSystem/module/decoder2_1/decooder2_1.sch D:/DigitalSystem/Lab/lab6/decooder2_1.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym decooder2_1 D:/DigitalSystem/module/decoder2_1/decooder2_1.sch D:/DigitalSystem/Lab/lab6/decooder2_1.sym 

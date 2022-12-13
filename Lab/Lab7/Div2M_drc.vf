@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Div2M_drc.vf
+// /___/   /\     Timestamp : 10/21/2022 01:59:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog Div2M_drc.vf -w D:/DigitalSystem/Lab/Lab7/Div2M.sch
+//Design Name: Div2M
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Div2M(INPUT, 
+             OUTPUT);
+
+    input INPUT;
+   output OUTPUT;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   mode10  XLXI_2 (.INPUT(XLXN_1), 
+                  .OUTPUT(XLXN_2));
+   mode10  XLXI_3 (.INPUT(XLXN_2), 
+                  .OUTPUT(XLXN_3));
+   mode10  XLXI_4 (.INPUT(XLXN_3), 
+                  .OUTPUT(XLXN_4));
+   mode10  XLXI_5 (.INPUT(XLXN_4), 
+                  .OUTPUT(XLXN_7));
+   mode10  XLXI_6 (.INPUT(XLXN_7), 
+                  .OUTPUT(XLXN_8));
+   mode10  XLXI_7 (.INPUT(XLXN_8), 
+                  .OUTPUT(XLXN_9));
+   mod2  XLXI_16 (.I(INPUT), 
+                 .O(XLXN_1));
+   mode10  XLXI_18 (.INPUT(XLXN_9), 
+                   .OUTPUT(OUTPUT));
+endmodule

@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/Test0077.xst" -ofn "C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/Test0077.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test0077.ucf -p xc6slx9-tqg144-3 Test0077.ngc Test0077.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Test0077_map.ncd Test0077.ngd Test0077.pcf 
+par -w -intstyle ise -ol high -mt off Test0077_map.ncd Test0077.ncd Test0077.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Test0077.twx Test0077.ncd -o Test0077.twr Test0077.pcf -ucf Test0077.ucf 
+bitgen -intstyle ise -f Test0077.ut Test0077.ncd 
+xst -intstyle ise -ifn "C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/Test0077.xst" -ofn "C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/Test0077.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test0077.ucf -p xc6slx9-tqg144-3 Test0077.ngc Test0077.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Test0077_map.ncd Test0077.ngd Test0077.pcf 
+par -w -intstyle ise -ol high -mt off Test0077_map.ncd Test0077.ncd Test0077.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Test0077.twx Test0077.ncd -o Test0077.twr Test0077.pcf -ucf Test0077.ucf 
+bitgen -intstyle ise -f Test0077.ut Test0077.ncd 
+xst -intstyle ise -ifn "C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/Test0077.xst" -ofn "C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/Test0077.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test0077.ucf -p xc6slx9-tqg144-3 Test0077.ngc Test0077.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Test0077_map.ncd Test0077.ngd Test0077.pcf 
+par -w -intstyle ise -ol high -mt off Test0077_map.ncd Test0077.ncd Test0077.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Test0077.twx Test0077.ncd -o Test0077.twr Test0077.pcf -ucf Test0077.ucf 
+bitgen -intstyle ise -f Test0077.ut Test0077.ncd 
+xst -intstyle ise -ifn "C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/Test0077.xst" -ofn "C:/Users/DreaMxickZen/Desktop/Test_6_00-77_Han2/Test_00_77/Test0077.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Test0077.ucf -p xc6slx9-tqg144-3 Test0077.ngc Test0077.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Test0077_map.ncd Test0077.ngd Test0077.pcf 
+par -w -intstyle ise -ol high -mt off Test0077_map.ncd Test0077.ncd Test0077.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Test0077.twx Test0077.ncd -o Test0077.twr Test0077.pcf -ucf Test0077.ucf 
+bitgen -intstyle ise -f Test0077.ut Test0077.ncd 

@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -verilog mod2_drc.vf -w D:/DigitalSystem/module/mod2/mod2.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym mod2 D:/DigitalSystem/module/mod2/mod2.sch D:/DigitalSystem/Lab/Lab7/mod2.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym mod2 D:/DigitalSystem/module/mod2/mod2.sch D:/DigitalSystem/Lab/Lab7/mod2.sym 

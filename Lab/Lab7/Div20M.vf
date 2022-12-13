@@ -1,0 +1,63 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Div20M.vf
+// /___/   /\     Timestamp : 10/21/2022 03:02:01
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalSystem/Lab/Lab7/Div20M.vf -w D:/DigitalSystem/Lab/Lab7/Div20M.sch
+//Design Name: Div20M
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Div20M(CLR, 
+              INPUT, 
+              OUTPUT);
+
+    input CLR;
+    input INPUT;
+   output OUTPUT;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   wire XLXN_17;
+   
+   mod2  XLXI_1 (.clr(CLR), 
+                .I(INPUT), 
+                .O(XLXN_1));
+   mode10  XLXI_2 (.CLR(CLR), 
+                  .INPUT(XLXN_1), 
+                  .OUTPUT(XLXN_2));
+   mode10  XLXI_3 (.CLR(CLR), 
+                  .INPUT(XLXN_2), 
+                  .OUTPUT(XLXN_3));
+   mode10  XLXI_4 (.CLR(CLR), 
+                  .INPUT(XLXN_3), 
+                  .OUTPUT(XLXN_4));
+   mode10  XLXI_5 (.CLR(CLR), 
+                  .INPUT(XLXN_4), 
+                  .OUTPUT(XLXN_5));
+   mode10  XLXI_6 (.CLR(CLR), 
+                  .INPUT(XLXN_5), 
+                  .OUTPUT(XLXN_17));
+   mode10  XLXI_7 (.CLR(CLR), 
+                  .INPUT(XLXN_17), 
+                  .OUTPUT(XLXN_7));
+   mode10  XLXI_8 (.CLR(CLR), 
+                  .INPUT(XLXN_7), 
+                  .OUTPUT(OUTPUT));
+endmodule

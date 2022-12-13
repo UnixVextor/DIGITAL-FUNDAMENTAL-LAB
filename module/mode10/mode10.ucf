@@ -1,0 +1,5 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "OUTPUT" LOC = P82;
+NET "INPUT" LOC = P50;

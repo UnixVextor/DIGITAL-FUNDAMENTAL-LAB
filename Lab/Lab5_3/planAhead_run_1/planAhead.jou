@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Sep 16 17:32:57 2022
+# Process ID: 2400
+# Log file: D:/DigitalSystem/Lab/Lab5_3/planAhead_run_1/planAhead.log
+# Journal file: D:/DigitalSystem/Lab/Lab5_3/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/DigitalSystem/Lab/Lab5_3/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P50 [get_ports CLK_P50]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports P27]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports P29]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports P30]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports P32]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports P33]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports P34]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports P35]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports P40]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports P41]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports P43]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports P44]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports PB3_P47]
+endgroup
+save_constraints

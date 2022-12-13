@@ -1,0 +1,3 @@
+vhdtdtfi -lib work Divider100.vhd -prj LabTestSecond -o DIVIDER10.spl -module DIVIDER10 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 DIVIDER10.spl {C:/Users/DreaMxickZen/Desktop/LabTestSecond - 10/DIVIDER10.sym} 
+vhdtdtfi -lib work Divider100.vhd -prj LabTestSecond -o DIVIDER10.spl -module DIVIDER10 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

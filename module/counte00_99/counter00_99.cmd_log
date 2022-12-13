@@ -1,0 +1,6 @@
+sch2hdl -intstyle ise -family spartan6 -verilog counter00_99_drc.vf -w D:/DigitalSystem/module/counte00_99/counter00_99.sch 
+xst -intstyle ise -ifn "D:/DigitalSystem/module/counte00_99/counter00_99.xst" -ofn "D:/DigitalSystem/module/counte00_99/counter00_99.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 counter00_99.ngc counter00_99.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter00_99_map.ncd counter00_99.ngd counter00_99.pcf 
+par -w -intstyle ise -ol high -mt off counter00_99_map.ncd counter00_99.ncd counter00_99.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml counter00_99.twx counter00_99.ncd -o counter00_99.twr counter00_99.pcf 
